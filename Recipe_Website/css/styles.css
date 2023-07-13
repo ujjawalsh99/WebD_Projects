@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    height: 100%;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+
+}
+
+nav {
+    padding: 2rem;
+}
+
+.navContainer {
+    width: 100vw;
+    /* background-color: rgb(99, 99, 139); */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    min-height: 80;
+    padding: 10px;
+}
+
+#navList {
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style-type: none;
+    font-size: 2.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navLogo {
+    font-size: 2.8rem;
+    color: white;
+}
+
+#navList a {
+    text-decoration: none;
+    color: white;
+}
+
+.navItems {
+    display: flex;
+    gap: 40px;
+}
+
+
+.footerBox {
+    width: 100%;
+    text-align: center;
+    min-height: 90px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+
+    .footerPara {
+        color: azure;
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+}
+
+.contentBox {
+    width: 70%;
+    margin: auto;
+    /* border: 1px solid black; */
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 3rem;
+    box-shadow: 0px 0px 30px black;
+}
+
+.item {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.rightBox {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+    top: 100px;
+    box-shadow: 0px 0px 30px 2px black;
+    border-radius: 20px;
+}
+
+.rightBox img {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.rightBox:hover {
+    transform: scale(1.2);
+}
+
+.leftBox {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.leftBox h2 {
+    color: #2D4356;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.leftBox h3 {
+    color: #435B66;
+    font-size: 1.5rem;
+}
+
+.leftBox ul {
+    list-style: none;
+    font-style: italic;
+}
+
+li {
+    color: #176B87;
+}
+
+.ingBox {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.recipeBox {
+    font-size: 1rem;
+    margin-left: 30px;
+    padding: 5px;
+}
+
+.rightBox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(36, 34, 34, 0.313);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox:hover .overlay {
+    opacity: 1;
+}
+
+.rightBox .overlay span {
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px #fff;
+}
