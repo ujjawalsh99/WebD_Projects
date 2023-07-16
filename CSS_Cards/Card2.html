@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FF9A8B;
+            background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
+        }
+
+        .card {
+            width: 400px;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 20px;
+        }
+
+        .image-container {
+            width: 400px;
+            height: 200px;
+
+        }
+
+        .image-container img {
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        .text-content {
+            margin: 35px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .header h3 {
+            font-size: 1.7rem;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            margin: 30px 0;
+            background-color: #FFDEE9;
+            background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+            height: 60px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px;
+
+            .amount {
+                margin-right: 100px;
+            }
+        }
+
+        .price img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .price a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .btn {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+
+            .btn1{
+                background-color: #071952;
+                border-radius: 20px;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 10px;
+                cursor: pointer;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }                
+            .btn2 {
+                border: none;
+                background-color: #fff;
+                font-size: 1rem;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image-container">
+                <img src="./images/icon.jpg" alt="RazorPay">
+            </div>
+            <div class="text-content">
+                <div class="header">
+                    <h3>Order Summary</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, nam. Cupiditate consequatur
+                        possimus dolorem placeat numquam explicabo, distinctio id nisi.
+                    </p>
+                </div>
+
+                <div class="price">
+                    <img src="./images/music.png" alt="music">
+                    <div class="amount">
+                        <p>Amount</p>
+                        <p>$99.9/year</p>
+                    </div>
+                    <a href="#">Change</a>
+                </div>
+
+                <div class="btn">
+                    <button class="btn1">Proceed to Payment</button>
+                    <button class="btn2">Cancel Order</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
