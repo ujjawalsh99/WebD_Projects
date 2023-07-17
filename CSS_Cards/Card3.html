@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            padding: 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+        }
+
+        .card {
+            width: 1000px;
+            height: 500px;
+            background-color: #fff;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card .textContainer {
+            width: 50%;
+            height: 100%;
+            background-color: #4e094c;
+            color: #fff;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card .imageContainer {
+            width: 50%;
+            height: 100%;
+            background-image: url('./images/icon.jpg');
+            /* background-repeat: no-repeat; */
+            background-size: contain;
+            background-position: center;
+        }
+
+        .card:hover::before{
+            left: 0;
+        }   
+        
+        .card::before{
+            background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
+            height: 100%;
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: left 5s ease;
+        }
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        .para p {
+            font-size: large;
+        }
+
+        .imageContainer img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+
+            .number {
+                font-size: xx-large;
+            }
+
+            .remark{
+                margin-left: 3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="textContainer">
+                <div class="header">
+                    <h3>Get insights that help your business grow</h3>
+                </div>
+                <div class="para">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni minima a temporibus eius magnam
+                        sequi corporis quod autem veniam beatae.</p>
+                </div>
+                <div class="stats">
+                    <div class="box">
+                        <p class="number">10K+</p>
+                        <p class="remark">Comments</p>
+                    </div>
+                    <div class="box">
+                        <p class="number">214</p>
+                        <p class="remark">Paid Users</p>
+                    </div>
+                    <div class="box">
+                        <p class="number">12M+</p>
+                        <p class="remark">Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="imageContainer">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
