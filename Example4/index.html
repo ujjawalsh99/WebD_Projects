@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            align-items: center;
+            background-color: #91C8E4;
+        }
+
+        .logo {
+            width: 10%;
+        }
+
+        .links {
+            width: 60%;
+        }
+
+        img {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul li {
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            font-size: 1.5rem;
+        }
+
+        .menu {
+            display: none;
+
+        }
+
+
+
+        @media screen and (max-width: 800px) {
+            .menu {
+                display: inline-block;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            .links{
+                transition-property: all;
+                transition-duration: 1.5s;
+            }
+
+            ul {
+                flex-direction: column;
+                margin-bottom: 5px;
+            }
+
+            .disable {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://img.freepik.com/free-icon/diamond_318-195445.jpg" alt="">
+        </div>
+        <div class="links disable">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Pricing</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="menu">
+            <img src="https://assets.stickpng.com/images/588a6507d06f6719692a2d15.png" alt="" onclick="toggle()">
+        </div>
+    </nav>
+
+    <script>
+        function toggle() {
+            let element = document.getElementsByClassName('links');
+            element[0].classList.toggle('disable')
+        }
+    </script>
+</body>
+
+</html>
