@@ -1,0 +1,18 @@
+:root{
+    --box-1-color: red;
+    --box-2-color: yellow;
+}
+div{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin: 20px;
+}
+
+#box1{
+    background-color: var(--box-1-color);
+}
+
+#box2{
+    background-color: var(--box-2-color);
+}
