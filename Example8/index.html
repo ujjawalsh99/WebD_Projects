@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 100vh;
+            width: 50%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        input[type="text"]{
+            width: 50%;
+            height: 30px;
+            border-radius: 30px;
+            padding: 10px 30px;
+            font-size: x-large;
+            border: 1px solid #526D82;
+            transition: 1s;
+        }
+
+        input[type="text"]::placeholder{
+            color: #ADC4CE;
+        }
+
+        input[type="text"]:focus::placeholder{
+            color: transparent;
+        }
+
+        input[type="text"]:focus {
+            width: 100%;
+            border: 1px solid #00C4FF;
+            outline: none;
+
+        }
+
+        ul li {
+            list-style-type: none;
+            line-height: 2;
+            font-size: 1.2rem;
+        }
+
+        .search-item {
+            border: 1px solid;
+            width: 100%;
+            border-radius: 20px;
+            position: relative;
+            top: 10px;
+            display: none;
+            transition: 1s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input id="search" type="text" placeholder="Search your result..." onkeyup="searching(event)">
+        <div class="search-item">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let inputElement = document.getElementById('search');
+        let searchItemElement = document.getElementsByClassName('search-item')[0];
+        function searching(e){
+            if(e.target.value?.length > 2){
+                searchItemElement.style.setProperty('display', 'initial');
+            }
+            else {
+                searchItemElement.style.setProperty('display', 'none');
+            }
+        }
+
+        
+    </script>
+</body>
+</html>
