@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            width: 400px;
+            height: 300px;
+            transition: 0.5s;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        img:not(:hover) {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="./images/img1.jpg" alt="img1">
+        <img src="./images/img2.svg" alt="img2">
+        <img src="./images/img3.svg" alt="img3">
+    </div>
+</body>
+
+</html>
