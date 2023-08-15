@@ -1,0 +1,16 @@
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 20px;
+    backdrop-filter: blur(500px);
+}
