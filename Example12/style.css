@@ -1,0 +1,50 @@
+button{
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+    align-items: center;
+    width: 200px;
+    position: relative;
+    padding: 0 10px;
+    background-color: rgb(25, 156, 113);
+    color: #fff;
+    font-size: x-large;
+    cursor: pointer;
+    border: 1px solid rgb(9, 152, 93);
+}
+
+svg{
+    width: 80px;
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    fill: white;
+}
+
+.container{
+    margin: 200px 500px;
+    padding: 50px;
+}
+
+button:hover{
+    background-color: red;
+    border: 1px solid rgb(212, 63, 63);
+}
+
+button:active{
+    animation: btn 1s forwards;
+}
+
+@keyframes btn{
+    0%{
+        transform: translateY(0%);
+    }
+
+    100%{
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
