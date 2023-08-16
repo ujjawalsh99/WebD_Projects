@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        li {
+            position: relative;
+            overflow: hidden;
+            width: fit-content;
+        }
+        li::after {
+            content: "";
+            /* background-color: rgba(240, 128, 128, 0.495); */
+            border: 2px solid pink;
+            width: 100%;
+            /* display: block; */
+            /* height: 100%; */
+            position: absolute;
+            left: -120%;
+            bottom: 0;
+            transition-property: all;
+            transition-duration: 1s;
+        }
+
+        li:hover::after{
+            left: 0%;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Support</li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>
