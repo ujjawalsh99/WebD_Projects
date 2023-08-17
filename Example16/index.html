@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .form-group {
+            margin: 100px;
+            position: relative;
+        }
+
+        input {
+            border: none;
+            border-bottom: 2px solid #fff;
+            background-color: rgba(0, 0, 0, 0);
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        input:enabled {
+            outline: none;
+        }
+
+        input::placeholder {
+            visibility: hidden;
+        }
+
+        .form-label {
+            color: #fff;
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+            font-size: 0.8rem;
+            transition: 0.5s;
+        }
+
+        input:placeholder-shown+label {
+            bottom: 2px;
+            font-size: 1.5rem;
+            left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-group">
+        <input type="text" id="name" class="form-field" placeholder="Name" required>
+        <label for="name" class="form-label">Name</label>
+    </div>
+</body>
+
+</html>
