@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <input type="password" name="pwd" id="pwd" onkeyup="strength(event)">
+        <button id="btn-visibility" type="button" onclick="visiblity()">Show</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <div id="stats">
+        <span id="info"></span>
+        <div id="strength">
+            <div id="fill-color"></div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

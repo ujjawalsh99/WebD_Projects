@@ -1,0 +1,16 @@
+#strength {
+    width: 200px;
+    height: 4px;
+    border: 1px solid grey;
+    display: inline-block;
+    margin: 0 10px;
+    background-color: lightgrey;
+}
+
+#stats{
+    margin: 100px 10px;
+}
+
+#fill-color{
+    height: 100%;
+}
